@@ -1,0 +1,17 @@
+# Logs
+logs
+*.log
+
+node_modules
+
+# package lock
+package-lock.json
+
+# yarn lock
+yarn.lock
+
+# Environment file
+.env
+.env.test
+
+credentials.json
