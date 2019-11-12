@@ -4,8 +4,8 @@
   "description": "exemplo de aplicacao chat usando socket.io",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src",
-    "api": "nodemon src"
+    "start": "node index.js",
+    "api": "nodemon index.js"
   },
   "author": "wilton.santos",
   "license": "ISC",
