@@ -3,6 +3,8 @@
 let express = require('express');
 let app = express();
 
+require('dotenv').config();
+
 let webhook = require('./webhook');
 
 app.use(express.urlencoded({ extended: 'true' }))
@@ -16,6 +18,6 @@ app.use((req, res, next) => {
 
 app.post('/webhook', webhook)
 
-app.listen(8080)
+app.listen(process.env.PORT || 4000)
 
-console.log('info', `server listening on port 8080`)
+console.log('info', `server listening on port ${process.env.PORT}`)
