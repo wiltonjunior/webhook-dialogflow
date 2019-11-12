@@ -1,13 +1,12 @@
 'use strict'
 
-let express = require('express')
-let app = express()
-let bodyParser = require('body-parser')
+let express = require('express');
+let app = express();
 
-let webhook = require('./webhook')
+let webhook = require('./webhook');
 
-app.use(bodyParser.urlencoded({ extended: 'true' }))
-app.use(bodyParser.json())
+app.use(express.urlencoded({ extended: 'true' }))
+app.use(express.json())
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*')

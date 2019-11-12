@@ -1,6 +1,18 @@
 {
-  "name": "webhook",
+  "name": "chat-app",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "description": "exemplo de aplicacao chat usando socket.io",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src",
+    "api": "nodemon src"
+  },
+  "author": "wilton.santos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
 }
